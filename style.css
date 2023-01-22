@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header{
+    background-color: #09090A;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;/*vai pegar toda a largura do header e colocar espaço entre os elementos */
+
+    padding: 48px;
+
+    position: fixed;
+    width: 100%;
+}
+
+
+body {
+    background-color: #09090A;
+    color: white;
+    height: 100vh;
+
+}
+
+button {
+    padding: 16px 24px;
+    border-radius: 8px; /*arredondar as bordas*/
+    border: 1px solid #8b5cf6;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center; /*alinha itens de uma caixa*/
+    font-family: Inter;
+    font-weight: 600; /*especifica o negrito da fonte*/
+    font-size: 16px;
+    line-height: 125%; /*controla o espaço entre as linhas do texto*/
+    gap: 12px;
+}
+
+form{
+    display: flex;
+    padding: 185px  48px 48px;/* ajustou o form abaixo do header*/
+    width: fit-content; /* encaixa o conteudo na largura*/
+
+}
+
+.habits{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 58px;
+}
+
+.habit{
+    width: 64px;
+    height: 64px;
+
+    font-size: 32px;
+
+    justify-content: center;
+}
+
+.days{
+    display: flex;
+    margin-left: 32px;
+    gap: 48px;
+
+}
+
+.day{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.day div{
+    gap: 8px;
+
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    line-height: 125%;
+
+text-align: center;
+
+    color: #A1A1AA;
+
+}
+
+
+input{
+    appearance: none;/*no botao de check quando voce tira a aparencia vc pode usar outras propriedades*/
+    -webkit-appearance: none; /*propriedade para alguns navegadores*/
+
+    width: 64px;
+    height: 64px;
+
+    border: 2px solid #27272A;
+    border-radius: 8px;
+
+    background-color: #18181B;
+
+
+}
+/*pseudo-selector*/
+input:checked{
+    background-color: #8b5cf6;
+
+}
+
+@media (max-width: 570px){
+
+  button div{
+      display:none;
+  }
+
+}/* regra do css q diz que se a tela for ate os px definidos a regra é aplicada */
